@@ -97,8 +97,6 @@ main {
   background-color: var(--white);
 
   .content {
-    width: 82%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -133,5 +131,26 @@ main {
 @media (min-width: 48rem) {
   .article-preview {
     flex-direction: row;
+
+    .image {
+      max-width: clamp(14.3125rem, 10.3125rem + 8.3333vw, 17.8125rem);
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      width: 100%;
+      padding: clamp(1.875rem, 3.3482rem + -1.6369vw, 2.5625rem)
+        clamp(2rem, 1.4286rem + 1.1905vw, 2.5rem);
+
+      padding-left: 0;
+    }
+
+    .row {
+      margin-bottom: 0;
+    }
   }
 }
