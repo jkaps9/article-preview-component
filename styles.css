@@ -15,6 +15,46 @@
   src: url("./fonts/manrope-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+:root {
+  --grey-900: hsl(217, 19%, 35%);
+  --grey-500: hsl(214, 17%, 51%);
+  --grey-400: hsl(212, 23%, 69%);
+  --grey-200: hsl(210, 46%, 95%);
+
+  --white: #ffffff;
+}
+
 body {
   font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.4em;
+  letter-spacing: 0.016px;
+  color: var(--grey-500);
+}
+
+h2,
+.name {
+  color: var(--grey-900);
+  font-weight: 700;
+}
+
+.text-preset-1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: 0.25px;
+}
+
+.date {
+  color: var(--grey-400);
+}
+
+.share {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100vw;
+  border: none;
+  background-color: var(--grey-200);
+  cursor: pointer;
 }
