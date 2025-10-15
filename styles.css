@@ -58,3 +58,36 @@ h2,
   background-color: var(--grey-200);
   cursor: pointer;
 }
+
+img {
+  max-width: 100%;
+}
+
+body,
+main {
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-preview {
+  display: flex;
+  border-radius: 0.625rem;
+  margin: 0 auto;
+  max-width: 45.625rem;
+  overflow: hidden;
+
+  .image {
+    flex-grow: 0;
+    overflow: hidden;
+    max-width: 17.8125rem;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
